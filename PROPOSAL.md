@@ -39,4 +39,3 @@ Google Summer of Code 2016 Proposal
 - Attention to detail with bugs [Javascript UTF8 bug](https://github.com/matrix-org/matrix-react-sdk/commit/081a975d2a3b8c63af68c551e09808806821d41b)
 - Worked on several web projects before, including a from [scratch CMS](https://github.com/BreadFramework/bread)
 - Regular contributions to open soure projects.[Activity Log](https://github.com/Half-Shot?tab=activity)
-- 
