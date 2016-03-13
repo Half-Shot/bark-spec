@@ -30,12 +30,13 @@ Google Summer of Code 2016 Proposal
 |               |               |       |         |
 |               |               |       |         |
 
-## Features not present
-- Voice/Video calling
- - While present in some matrix clients, it's out of scope for what the project is and most likely will not be implemented.
+## Extra features to implement at a later date
+ - A bridge to services such as Twitter,Facebook,G+ etc.
+ - Calling users directly through the client.
  
 ## Why me?
 - Familiar with the matrix client -> server spec, and already a [keen contributer](https://github.com/matrix-org/matrix-python-sdk/pull/9)
 - Attention to detail with bugs [Javascript UTF8 bug](https://github.com/matrix-org/matrix-react-sdk/commit/081a975d2a3b8c63af68c551e09808806821d41b)
 - Worked on several web projects before, including a from [scratch CMS](https://github.com/BreadFramework/bread)
 - Regular contributions to open soure projects.[Activity Log](https://github.com/Half-Shot?tab=activity)
+- I love working on open source software, and will be happy to continue working on it until I am satisfied with it.
