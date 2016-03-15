@@ -29,14 +29,18 @@ The idea behind using this system is that we can provide the users a way to keep
 
 ### Client
 
-The client would be a web page designed to make this process more automated and fit for general use. In additon to setting up the users room once matrix details have been given, it will listen for messages on each bark room and sort them into a single stream. The messages would be interactable (e.g. you can 'reblog' them). The client would also have the media features implemented like taking a picture.
+The client would be a single page webpage, which simplifys the process explained above.In additon to setting up the users room once matrix details have been given, it will listen for messages on each bark room. It will then sort them into a single stream. The messages would be interactable (e.g. you can 'reblog' them). The client would also have the media features implemented like taking a picture or sharing a audio/video file.
 
 Searching for users would be limited at first to your own homeserver since matrix doesn't have a global index system, but you can add people by internalID or alias (the latter being automatic if it exists).
 
+## Deliverables
+
+- I plan to deliver a complete web based client by the end of the development period. Mpre specifically, this means the styling, javascript source code and html documents used to develop it.
+- This will include documentation on the structures I create for the project, as well as information on how to extend it further.
+
 ## Timeframe
 
-This is the squedule I plan to keep to. Each milestone has been given a deadline.
-I expect to meet them, and the time will include bug testing and research for each task.
+This is the schedule I plan to keep to. Each milestone has been given a deadline. I expect to meet them, and the time will include bug testing and research for each task.
 
 |Week    | May           | June          | July            | August          |
 |:------:|:-------------:|:-------------:|:---------------:|:---------------:|
