@@ -3,10 +3,7 @@ Google Summer of Code 2016 Proposal
 
 ## Bark, a full Microblog implementation in Matrix
 
-- To create a simple blogging system akin to things like Twitter, but with the ability to run your own server.
-- Decentralized blogging, which is not only super cool but could allow for much greater scale than a centralized service.
-- To create a simple to use client that could be used by any internet user, that will still retain the features of matrix.
-- To allow users the choice of their own client, whether that be in the browser or on the desktop.
+Matrix seems like the ideal framework to build a microblogging system on top of. In essence, a microblog is just a selective messaging application where you choose who you subscribe to. I plan to create a **full** implementation of a microblog (using examples such as Twitter and Google Plus as an influence on it's look) on top of matrix. This involves building a structure to accomodate features such as replying, 'following' and a central 'timeline', as well as the client to make it usable for everyone. I have a huge interest in building a ditributed service similar to existing microblogs, and 'Bark' is basically the oppertunity I have to prove that one is viable, while also proving that Matrix is so much more than just a group messaging system to the masses.
 
 ## Why Microblog in Matrix
 
@@ -20,7 +17,7 @@ Google Summer of Code 2016 Proposal
 ### Rooms
 Rooms will act as a users **stream**. Every user that joins bark will create a single room on their homeserver which would serve . They can **post** to it and **allow/deny** other users access to it. This gives the stream owner some flexibility about allowing people to read their posts and if they want people to **'write on'** their stream.
 
-A user may set their **biograpghy** ( a small piece of text about themselves ) as their room topic. Following a user would be as simple as joining their room.
+A user may set their **biography** as their room topic. Following a user would be as simple as joining their room.
 
 Replying to a users post would be as simple as sending '>replying to:eventid' followed by your message in a users stream. This should allow for other clients to understand what is being said even if they don't understand the microblog format.
 
@@ -34,20 +31,66 @@ The client would be a web page designed to make this process more automated and 
 
 Searching for users would be limited at first to your own homeserver since matrix doesn't have a global index system, but you can add people by internalID or alias (the latter being automatic if it exists).
 
-## Timescale
-|Week    | May           | June          | July  | Auguest |
-|:------:|:-------------:|:-------------:|:-----:|:-------:|
-|   1    |               |               |       |         |
-|   2    |               |               |       |         |
-|   3    |               |               |       |         |
-|   4    |               |               |       |         |
+## Timeframe
+
+This is the squedule I plan to keep to. Each milestone has been given a deadline.
+I expect to meet them, and the time will include bug testing and research for each task.
+
+|Week    | May           | June          | July            | Auguest         |
+|:------:|:-------------:|:-------------:|:---------------:|:---------------:|
+|   1    | ///////////// |               |                 |                 |
+|   2    | ///////////// | Milestone 1 ⚀ |  Milestone 2 ⚁  | Milestone 3 ⚂   |
+|   3    | ///////////// |               |                 | **Final Submit**|
+|   4    |               |               |                 | /////////////// |
+
+## Milestones
+
+### ⚀ Milestone 1 : Basic Functionality
+
+My first milestone for the project would be to deliver on the basic aims of the project.
+The CSS would be minimal right now as at this stage I will be focusing on good code quality first.
+I suspect this 
+
+- Connecting to and from Matrix in the client.
+- Setting up the user
+ - 'Stream' Room
+- Sending and reciving messages.
+- Subscribing to other people
+- Showing all the messages in a timeline
+- A minimal form of user profile, probably just enough to subscribe.
+
+
+### ⚁ Milestone 2: User Interface
+
+Milestone 2's objective is to have it ready for testing by anyone.
+- Redesigned CSS with a central layout *will take the majority of the time*
+- Settings dialogue to change privacy settings for a user.
+- Reply feature
+- Ability to see individual user profiles and streams.
+- Browser features such as notifications.
+
+In addition, I plan to give this to users to test and get some feedback
+
+### ⚂ Milestone 3: Extra Features and Testing
+
+This milestone will be mainly checking that everything is in place
+and the usability is there.
+
+- Taking in feedback from testing, and working on features that seem reasonable.
+- Small features (such as replying inside a message).
+- Search functionality
+- Checking the client is responsive for phones,tablets and other devices.
+- May be limited to homeservers, depending on how I plan to do it.
+- Testing, testing and more testing.
 
 ## Extra features to implement at a later date
  - A bridge to services such as Twitter,Facebook,G+ etc.
+  - Quite likely will be part of another project going on concurrently with my own, so I'll leave this discussion until     after the GSoC period.
  - Calling users directly through the client.
  
 ## Why me?
 - Familiar with the matrix client -> server spec, and already a [keen contributer](https://github.com/matrix-org/matrix-python-sdk/pull/9)
+- Extremely fluent in Javascript, HTML and CSS. 
 - Attention to detail with bugs [Javascript UTF8 bug](https://github.com/matrix-org/matrix-react-sdk/commit/081a975d2a3b8c63af68c551e09808806821d41b)
 - Worked on several web projects before, including a from [scratch CMS](https://github.com/BreadFramework/bread)
 - Regular contributions to open soure projects.[Activity Log](https://github.com/Half-Shot?tab=activity)
