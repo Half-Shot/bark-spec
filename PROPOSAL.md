@@ -47,7 +47,7 @@ This is the schedule I plan to keep to. Each milestone has been given a deadline
 |Week    | May           | June          | July            | August          |
 |:------:|:-------------:|:-------------:|:---------------:|:---------------:|
 |   1    | ///////////// |               |                 |                 |
-|   2    | ///////////// | M.⚀ (Fri 12th)|  M.⚁ (Fri 8th)  | M.3 (Fri 12th)  |
+|   2    | ///////////// | M.⚀ (Fri 12th)|  M.⚁ (Fri 8th)  | M.⚂ (Fri 12th)  |
 |   3    | ///////////// |               |                 | **Final Submit**|
 |   4    | Begin:28th    |               |                 | /////////////// |
 
