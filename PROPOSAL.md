@@ -35,6 +35,8 @@ The client would be a single page webpage, which simplifys the process explained
 
 Searching for users would be limited at first to your own homeserver since matrix doesn't have a global index system, but you can add people by internalID or alias (the latter being automatic if it exists).
 
+![Sketch of Web App](BarkSketch.png)
+
 ## Deliverables
 
 - I plan to deliver a complete web based client (approximately 2000-4000 lines of source code) by the end of the development period. More specifically, this means the styling, javascript source code and html documents used to develop it.
