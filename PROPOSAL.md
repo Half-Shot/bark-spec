@@ -23,7 +23,7 @@ Replying to a user’s post would be as simple as sending two messages. The firs
 
 This should allow for other clients to understand what is being said even if they don't understand the microblog format.
 
-Room naming is more tricky due to the variety of permissions that users may be allowed. The bark client will create a room for the user on their homeserver (this would be a requirement) upon login to the client if it does not exist. The rooms name would be 'Bark - DisplayName' which would be searched for upon each login. You can set whatever permissions you want for this room to make it discoverable or not. 
+Room naming is more tricky due to the variety of permissions that users may be allowed. The Bark client will create a room for the user on their homeserver (this would be a requirement) upon login to the client if it does not exist. The rooms name would be 'Bark - DisplayName' which would be searched for upon each login. You can set whatever permissions you want for this room to make it discoverable or not. 
 
 People who wish to add you may do so by either typing in your rooms alias if it has one, or your internal ID if not.
 The idea behind using this system is that we can provide the users a way to keep total control of their content via the rooms permissions control.
@@ -31,14 +31,14 @@ The idea behind using this system is that we can provide the users a way to keep
 
 ### Client
 
-The client would be a single page webpage, which simplifys the process explained above.In additon to setting up the users room once matrix details have been given, it will listen for messages on each bark room. It will then sort them into a single stream. The messages would be interactable (e.g. you can 'reblog' them). The client would also have the media features implemented like taking a picture or sharing a audio/video file.
+The client would be a single page webpage, which simplifys the process explained above.In additon to setting up the users room once matrix details have been given, it will listen for messages on each Bark room. It will then sort them into a single stream. The messages would be interactable (e.g. you can 'reblog' them). The client would also have the media features implemented like taking a picture or sharing a audio/video file.
 
 Searching for users would be limited at first to your own homeserver since matrix doesn't have a global index system, but you can add people by internalID or alias (the latter being automatic if it exists).
 
 ## Deliverables
 
 - I plan to deliver a complete web based client (approximately 2000-4000 lines of source code) by the end of the development period. More specifically, this means the styling, javascript source code and html documents used to develop it.
-- Full documentation on creating extentions and improvements to 'Bark'
+- Full documentation on creating extentions and improvements to 'Bark'.
 
 ## Timeframe
 
