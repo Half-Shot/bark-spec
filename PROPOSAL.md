@@ -37,12 +37,10 @@ Searching for users would be limited at first to your own homeserver since matri
 
 ## Deliverables
 
-- I plan to deliver a complete web based client by the end of the development period. Mpre specifically, this means the styling, javascript source code and html documents used to develop it.
-- Full documentation on the implementation of creating a 'bark' client, and how to extent this one further.
+- I plan to deliver a complete web based client (approximately 2000-4000 lines of source code) by the end of the development period. More specifically, this means the styling, javascript source code and html documents used to develop it.
+- Full documentation on creating extentions and improvements to 'Bark'
 
 ## Timeframe
-
-This is the schedule I plan to keep to. Each milestone has been given a deadline. I expect to meet them, and the time will include bug testing and research for each task.
 
 |Week    | May           | June          | July            | August          |
 |:------:|:-------------:|:-------------:|:---------------:|:---------------:|
