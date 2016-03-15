@@ -38,7 +38,7 @@ Searching for users would be limited at first to your own homeserver since matri
 ## Deliverables
 
 - I plan to deliver a complete web based client by the end of the development period. Mpre specifically, this means the styling, javascript source code and html documents used to develop it.
-- This will include documentation on the structures I create for the project, as well as information on how to extend it further.
+- Full documentation on the implementation of creating a 'bark' client, and how to extent this one further.
 
 ## Timeframe
 
