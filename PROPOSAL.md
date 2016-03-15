@@ -1,7 +1,9 @@
 Bark: Microblogging in Matrix
 ===================================
 
-Matrix seems like the ideal framework on which to build a microblogging system. In essence, a microblog is just a selective messaging application where you choose who you subscribe to. I plan to create a full implementation of a microblog (using examples such as Twitter and Google Plus as an influence on it's look) on top of Matrix. This involves building a structure to accommodate features such as ‘replying’, 'following' and a ‘central timeline' inside a client, to make it usable for everyone. I have a huge interest in building a distributed service similar to existing microblogs, and 'Bark' is basically the opportunity I have to prove that one is viable, while also proving that Matrix is so much more than just a group messaging system to the masses.
+Matrix seems like the ideal framework on which to build a microblogging system. In essence, a microblog is just a selective messaging application where you choose who you subscribe to. I plan to create a full implementation of a microblog (using examples such as Twitter and Google Plus as an influence on it's look) on top of Matrix. This involves building a structure to accommodate features such as ‘replying’, 'following' and a ‘central timeline' inside a client, to make it usable for everyone.
+
+I have a huge interest in building a distributed service similar to existing microblogs, and 'Bark' is basically the opportunity I have to prove that one is viable, while also proving that Matrix is so much more than just a group messaging system to the masses.
 
 ## Why Microblog in Matrix
 
@@ -21,7 +23,9 @@ Replying to a user’s post would be as simple as sending two messages. The firs
 
 This should allow for other clients to understand what is being said even if they don't understand the microblog format.
 
-Room naming is more tricky due to the variety of permissions that users may be allowed. The bark client will create a room for the user on their homeserver (this would be a requirement) upon login to the client if it does not exist. The rooms name would be 'Bark - DisplayName' which would be searched for upon each login. You can set whatever permissions you want for this room to make it discoverable or not. People who wish to add you may do so by either typing in your rooms alias if it has one, or your internal ID if not.
+Room naming is more tricky due to the variety of permissions that users may be allowed. The bark client will create a room for the user on their homeserver (this would be a requirement) upon login to the client if it does not exist. The rooms name would be 'Bark - DisplayName' which would be searched for upon each login. You can set whatever permissions you want for this room to make it discoverable or not. 
+
+People who wish to add you may do so by either typing in your rooms alias if it has one, or your internal ID if not.
 The idea behind using this system is that we can provide the users a way to keep total control of their content via the rooms permissions control.
 
 
