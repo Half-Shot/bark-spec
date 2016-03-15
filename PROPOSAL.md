@@ -1,4 +1,4 @@
-Bark, Microblogging in Matrix
+Bark: Microblogging in Matrix
 ===================================
 
 Matrix seems like the ideal framework on which to build a microblogging system. In essence, a microblog is just a selective messaging application where you choose who you subscribe to. I plan to create a full implementation of a microblog (using examples such as Twitter and Google Plus as an influence on it's look) on top of Matrix. This involves building a structure to accommodate features such as ‘replying’, 'following' and a ‘central timeline' inside a client, to make it usable for everyone. I have a huge interest in building a distributed service similar to existing microblogs, and 'Bark' is basically the opportunity I have to prove that one is viable, while also proving that Matrix is so much more than just a group messaging system to the masses.
