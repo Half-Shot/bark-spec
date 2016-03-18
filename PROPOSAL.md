@@ -36,6 +36,18 @@ The client would be a single page webpage, which simplifys the process explained
 
 Searching for users would be limited at first to your own homeserver since matrix doesn't have a global index system, but you can add people by internalID or alias (the latter being automatic if it exists).
 
+I would also implement a few new event types which would not be well represented by the 'm.room.message' type.
+
+##### 'org.bark.repost'
+
+It's currently not easy to quote a person in another room, which is essentially what reposting is. The event would have a field for the quoted event id and the stream that sent it so the client could find the post and get information about it's body, likes and other stats if available.
+
+##### 'org.bark.like'
+
+Essentially, this would be posted whenever you click like on a persons post. It would be send to the stream and then other clients can count each like for a post by the linked event id inside. 
+
+
+
 ![Sketch of Web App](BarkSketch.png)
 
 ## Deliverables
