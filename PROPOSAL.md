@@ -29,12 +29,11 @@ Room naming is more tricky due to the variety of permissions that users may be a
 People who wish to add you may do so by either typing in your rooms alias if it has one, or your internal ID if not.
 The idea behind using this system is that we can provide the users a way to keep total control of their content via the rooms permissions control.
 
-
 ### Client
 
-The client would be a single page webpage, which simplifys the process explained above.In additon to setting up the users room once matrix details have been given, it will listen for messages on each Bark room. It will then sort them into a single stream. The messages would be interactable (e.g. you can 'reblog' them). The client would also have the media features implemented like taking a picture or sharing a audio/video file.
+The client would be a single page webpage, which simplifys the process explained above. In addition to setting up the users room once matrix details have been given, it will listen for messages on each Bark room. It will then sort them into a single stream. The messages would be interactive (e.g. you can 'reblog' them). The client would also have the media features implemented like taking a picture or sharing a audio/video file. 
 
-Searching for users would be limited at first to your own homeserver since matrix doesn't have a global index system, but you can add people by internalID or alias (the latter being automatic if it exists).
+Searching for users would be limited at first to your own homeserver since matrix doesn't have a global index system, but you can add people by internalID or alias (the latter being automatic if it exists). Bark rooms would have an included state event to ensure that the room is 'Bark' compatible. One way we could work around the issue of searching could be a global 'phonebook' approach. A room on matrix.org would be dedicated to listing clients by display name and sender id which would be optional. Users could search this room to find people to subscribe to.
 
 I would also implement a few new event types which would not be well represented by the 'm.room.message' type.
 
@@ -46,14 +45,16 @@ It's currently not easy to quote a person in another room, which is essentially 
 
 Essentially, this would be posted whenever you click like on a persons post. It would be send to the stream and then other clients can count each like for a post by the linked event id inside. 
 
+#### 'org.bark.user'
 
+This would list a user's (current at the time) display name, sender id and (current) biography. These would be posted to dedicated 'phonebook' rooms which would allow people to do simple searches for users.
 
 ![Sketch of Web App](BarkSketch.png)
 
 ## Deliverables
 
 - I plan to deliver a complete web based client (approximately 2000-4000 lines of source code) by the end of the development period. More specifically, this means the styling, javascript source code and html documents used to develop it.
-- Full documentation on creating extentions and improvements to 'Bark'.
+- Full documentation on creating extensions and improvements to 'Bark'.
 
 ## Timeframe
 
@@ -70,7 +71,6 @@ Essentially, this would be posted whenever you click like on a persons post. It 
 
 My first milestone for the project would be to deliver on the basic aims of the project.
 The CSS would be minimal right now as at this stage I will be focusing on good code quality first.
-I suspect this 
 
 - Connecting to and from Matrix in the client.
 - Setting up the user
@@ -90,7 +90,7 @@ Milestone 2's objective is to have it ready for testing by anyone.
 - Ability to see individual user profiles and streams.
 - Browser features such as notifications.
 
-In addition, I plan to give this to users to test and get some feedback
+In addition, I plan to give this to users to test and get some feedback.
 
 ### ⚂ Milestone 3: Extra Features and Testing
 
@@ -108,6 +108,7 @@ and the usability is there.
  - A bridge to services such as Twitter,Facebook,G+ etc.
   - Quite likely will be part of another project going on concurrently with my own, so I'll leave this discussion until     after the GSoC period.
  - Calling users directly through the client.
+ - Threading support in Matrix has been a long awaited feature, and obviously would be a great addition to the client's replying system. However the task would require developments to be made inside Synapse and out of scope for this project. 
  
 ## Why me?
 
