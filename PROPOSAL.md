@@ -45,7 +45,7 @@ It's currently not easy to quote a person in another room, which is essentially 
 
 Essentially, this would be posted whenever you click like on a persons post. It would be send to the stream and then other clients can count each like for a post by the linked event id inside. 
 
-#### 'org.bark.user'
+##### 'org.bark.user'
 
 This would list a user's (current at the time) display name, sender id and (current) biography. These would be posted to dedicated 'phonebook' rooms which would allow people to do simple searches for users.
 
